@@ -48,5 +48,12 @@ const username = ref('')
 const password = ref<string>()
 
 const submitForm = async () => {
+  const Username = username.value;
+  const Password = password.value;
+  if (!Username || !Password) {
+    alert('Veuillez remplir tous les champs.')
+    return -1;
+  }
+  
 }
 </script>
